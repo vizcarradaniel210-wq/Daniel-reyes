@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Registro Estudiantil</title>
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="encabezado">
+            <div class="icono">✦</div>
+            <h1>Registro Estudiantil</h1>
+            <p>Complete los datos del estudiante</p>
+        </div>
+
+        <form id="formulario">
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+            <label for="nie">NIE</label>
+            <input type="text" id="nie" placeholder="Ingrese su NIE">
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" placeholder="Ingrese su edad">
+
+            <label for="grado">Grado</label>
+            <select id="grado">
+                <option value="">Seleccionar</option>
+                <option value="1.er año">1.er año</option>
+                <option value="2.º año">2.º año</option>
+                <option value="3.er año">3.er año</option>
+            </select>
+
+            <label for="seccion">Sección</label>
+            <select id="seccion">
+                <option value="">Seleccionar</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+            </select>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" placeholder="Ingrese su teléfono">
+
+            <button type="submit">
+                Registrar estudiante
+            </button>
+
+        </form>
+
+        <div id="mensaje"></div>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
